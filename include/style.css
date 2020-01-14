@@ -1,0 +1,578 @@
+/* CSS Document */
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+/* Títulos e Sub-Títulos */
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Signika+Negative');
+/* Texto Normal */
+/* font-family: 'Signika Negative', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #000;
+    height: calc(100% - 1em);
+}
+
+a,
+a>* {
+    text-decoration: none;
+    color: #5b5e60;
+}
+
+ul,
+li {
+    list-style: none outside;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 15px;
+    color: #ccc;
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.3em;
+    font-weight: normal;
+}
+
+th,
+td {
+    padding: 5px 20px 0 0px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+p {
+    margin: 0 0 1.5em;
+    color: #777;
+    padding: 0;
+    line-height: 1.75em;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+
+/* -------------------------------------------------- */
+/*	INICIO HEADER
+	/* -------------------------------------------------- */
+section#header header nav ul.menu {
+    display: flex;
+    position: fixed;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    top: -1px;
+    width: 100vw;
+    height: 5vw;
+    /*8vw*/
+    background: #8b0000;
+    z-index: 1;
+    font-family: 'Oswald', sans-serif;
+}
+
+section#header header nav ul.menu li a {
+    display: inline-block;
+    margin: 0 4vw;
+    /*margin: 0 1.7vw;*/
+    text-decoration: none;
+    /* text-indent: -90px;  Impede o uso de border-bottom */
+}
+
+section#header header nav ul.menu li a.logo {
+    width: 6.5vw;
+    /*6vw*/
+    height: 6.5vw;
+    /*6vw*/
+    border-radius: 50%;
+    background: url("./img/logo.png") no-repeat center;
+    background-size: cover;
+    transform: translateY(22%);
+    /* Faz com que o logo saia da barra */
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, .5);
+}
+
+section#header header nav ul.menu li a.link {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.4vw;
+    /*1.8vw*/
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section#header header nav ul.menu li a.link:link,
+section#header header nav ul.menu li a.link:visited {
+    color: #fff;
+}
+
+section#header header nav ul.menu li a.link:hover,
+section#header header nav ul.menu li a.link:active {
+    border-bottom: 0.16em solid #e8641b;
+}
+
+/* -------------------------------------------------- */
+/*	FIM HEADER
+	/* -------------------------------------------------- */
+
+
+
+
+/* -------------------------------------------------- */
+/*	INICIO SLIDESHOW
+	/* -------------------------------------------------- */
+section#banner #slideshow {
+    position: relative;
+    margin-top: 20px;
+    /*width: 100vw;*/
+    height: 100vh;
+    /* 84vh */
+}
+
+section#banner #slideshow>div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #fff;
+}
+
+/* -------------------------------------------------- */
+/*	FIM HEADER
+	/* -------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- */
+/*	INICIO TITULO SECTION
+	/* -------------------------------------------------- */
+.section-title {
+    position: relative;
+    margin-bottom: 70px;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -7%;
+    width: 14%;
+    height: 2px;
+    background-color: #ececec;
+    content: "";
+}
+
+.section-title h1 {
+    margin-bottom: 20px;
+    color: #ea8300;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 1.1em;
+}
+
+.section-title h2 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+/* -------------------------------------------------- */
+/*	FIM TITULO SECTION
+	/* -------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- */
+/*	INICIO ABOUT
+	/* -------------------------------------------------- */
+section#about div.caixaA {
+    vertical-align: baseline;
+    padding-right: 3.5em;
+}
+
+section#about div.caixaA img {
+    width: 30vw;
+    height: auto;
+}
+
+/* -------------------------------------------------- */
+/*	FIM HEADER
+	/* -------------------------------------------------- */
+
+.align-center {
+    text-align: center;
+}
+
+
+/* -------------------------------------------------- */
+/*	INICIO FORM DE AVALIAÇÃO
+	/* -------------------------------------------------- */
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+section#rate div.form {
+    background: rgba(19, 35, 47, 0.4);
+    /* (0.0) */
+    font-family: 'Titillium Web', sans-serif;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+section#rate div.form a {
+    text-decoration: none;
+    color: #ea8300;
+    transition: .5s ease;
+}
+
+section#rate div.form a:hover {
+    color: #ce7500;
+}
+
+section#rate div.form .tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+section#rate div.form .tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section#rate div.form .tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+section#rate div.form .tab-group li a:hover {
+    background: #ea8300;
+    color: #ffffff;
+}
+
+section#rate div.form .tab-group .active a {
+    background: #ce7500;
+    color: #ffffff;
+}
+
+section#rate div.form .tab-content>div:last-child {
+    display: none;
+}
+
+section#rate div.form h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 40px;
+}
+
+section#rate div.form label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.25s ease;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 22px;
+}
+
+section#rate div.form label .req {
+    margin: 2px;
+    color: #ce7500;
+}
+
+section#rate div.form label.active {
+    -webkit-transform: translateY(3.04rem);
+    transform: translateY(3.04rem);
+    left: 2px;
+    font-size: 14px;
+}
+
+section#rate div.form div#text label.active {
+    -webkit-transform: translateY(4.6rem);
+    transform: translateY(4.6rem);
+    left: 2px;
+    font-size: 14px;
+}
+
+section#rate div.form label#nota_error {
+    -webkit-transform: translateY(0.1rem);
+    transform: translateY(0.1rem);
+}
+
+section#rate div.form label.active .req {
+    opacity: 0;
+}
+
+section#rate div.form label.highlight {
+    color: #ffffff;
+}
+
+section#rate div.form input,
+section#rate div.form textarea,
+section#rate div.form select {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+section#rate div.form select {
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+section#rate div.form select>option {
+    background: rgba(19, 35, 47, 0.4);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+section#rate div.form input:focus,
+section#rate div.form textarea:focus,
+section#rate div.form select:focus {
+    outline: 0;
+    border-color: #ce7500;
+}
+
+section#rate div.form textarea {
+    border: 2px solid #a0b3b0;
+    resize: none;
+}
+
+section#rate div.form .field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+section#rate div.form .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+section#rate div.form .top-row>div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+section#rate div.form .top-row>div:last-child {
+    margin: 0;
+}
+
+section#rate div.form .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #ea8300;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+}
+
+section#rate div.form .button:hover,
+section#rate div.form .button:focus {
+    background: #c57307;
+}
+
+section#rate div.form .button-block {
+    display: block;
+    width: 100%;
+}
+
+section#rate div.form .forgot {
+    margin-top: -20px;
+    text-align: right;
+}
+
+/* -------------------------------------------------- */
+/*	FIM FORM DE AVALIAÇÃO
+	/* -------------------------------------------------- */
+
+
+
+/* -------------------------------------------------- */
+/*	INICIO Rating Star Widgets Style
+	/* -------------------------------------------------- */
+section#rate .rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+
+section#rate .rating-stars ul>li.star {
+    display: inline-block;
+
+}
+
+/* Idle State of the stars */
+section#rate .rating-stars ul>li.star>i.fa {
+    font-size: 2.5em;
+    /* Change the size of the stars */
+    color: #ccc;
+    /* Color on idle state */
+}
+
+/* Hover state of the stars */
+section#rate .rating-stars ul>li.star.hover>i.fa {
+    color: #FFCC36;
+}
+
+/* Selected state of the stars */
+section#rate .rating-stars ul>li.star.selected>i.fa {
+    color: #FF912C;
+}
+
+/* -------------------------------------------------- */
+/*	FIM Rating Star Widgets Style
+	/* -------------------------------------------------- */
+
+
+
+
+
+/* -------------------------------------------------- */
+/*	INICIO FOOTER
+	/* -------------------------------------------------- */
+
+section#footer {
+    position: relative;
+    color: #a0a0a0;
+}
+
+section#footer .widget {
+    margin-bottom: 25px;
+}
+
+/* Social-Icons */
+section#footer ul.social-icons {
+    font-size: 0;
+}
+
+section#footer ul.social-icons {
+    margin-top: 25px;
+}
+
+section#footer ul.social-icons li {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+section#footer ul.social-icons li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cfcfcf;
+    border: 1px solid rgba(207, 207, 207, .33);
+    font: 0/0 a;
+    cursor: pointer;
+    text-align: center;
+
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+section#footer ul.social-icons li a:hover {
+    border-color: transparent;
+}
+
+section#footer ul.social-icons .facebook a:hover {
+    background-color: #49699f;
+}
+
+section#footer .bottom-footer {
+    padding: 5px 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #2c2a2e;
+    border-color: rgba(207, 207, 207, .12);
+    background-color: rgba(0, 0, 0, .95);
+    color: #4b4b4c;
+}
+
+section#footer .bottom-footer .copyright {
+    font-size: 12px;
+    color: #d6d6d6;
+}
+
+/* -------------------------------------------------- */
+/*	FIM FOOTER
+    /* -------------------------------------------------- */
+section#footer {
+    background-color: rgba(0, 0, 0, .7);
+}
+section#footer .full-bg-image {
+    background-image: url(./img/footerimg.jpg);
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
